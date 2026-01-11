@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .flags {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+        .flag {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+        }
+        .flag:hover {
+            transform: scale(1.1);
+        }
+        .flag img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .flag-label {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Language</h1>
+        <div class="flags">
+            <a href="https://example.com/de" class="flag">
+                <img src="https://flagcdn.com/w320/de.png" alt="German Flag">
+                <div class="flag-label">Deutsch</div>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJlk9LSJuTFXMD0nRlCH1qqB9tCNPjyuVEatIdVxOpnGwrvA/viewform?usp=dialog" class="flag">
+                <img src="https://flagcdn.com/w320/gb.png" alt="English Flag">
+                <div class="flag-label">English</div>
+            </a>
+            <a href="https://example.com/hu" class="flag">
+                <img src="https://flagcdn.com/w320/hu.png" alt="Hungarian Flag">
+                <div class="flag-label">Magyar</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
